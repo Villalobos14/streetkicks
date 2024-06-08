@@ -61,7 +61,7 @@ export default function ProductList() {
                     <button
                         key={index}
                         onClick={() => handleChangePage(index + 1)}
-                        className={`px-4 py-2 mx-1 ${currentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-gray-300'}`}
+                        className={`px-4 py-2 mx-1 ${currentPage === index + 1 ? 'bg-gray-00 text-white' : 'bg-gray-100'}`}
                     >
                         {index + 1}
                     </button>

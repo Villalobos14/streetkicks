@@ -122,7 +122,7 @@ export default function ProductDetail() {
                                     <input
                                         required
                                         type="number"
-                                        className='w-full mr-2 mb-4 focus:border-[#2d2d2d] focus:outline-none focus:ring-[#2d2d2d] '
+                                        className='w-full mr-2 mb-4 focus:border-[#2d2d2d] focus:outline-none focus:ring-[#2d2d2d] border rounded-s px-2 py-2 border-gray-400 border-light '
                                         placeholder='Cantidad'
                                         id='cantidad'
                                         name='cantidad'

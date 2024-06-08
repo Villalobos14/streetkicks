@@ -10,10 +10,9 @@ export default function Cart() {
     const [notificaciones, setNotificaciones] = useState([]);
     const [show, setShow] = useState(false);
     const [cartItems, setCartItems] = useState([]);
-    const navigate = useNavigate();  // Utiliza useNavigate para redirigir
+    const navigate = useNavigate();  
 
     useEffect(() => {
-        // Recupera los datos del carrito desde el localStorage
         const cart = JSON.parse(localStorage.getItem('cart')) || [];
         setCartItems(cart);
     }, []);
@@ -111,7 +110,7 @@ export default function Cart() {
                         <div className="mt-6 flex justify-end">
                             <button
                                 onClick={handleCheckout}
-                                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-[#25589f] hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-[#25589f] hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                             >
                                 Pagar
                             </button>

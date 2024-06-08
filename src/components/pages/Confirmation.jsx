@@ -80,7 +80,7 @@ export default function Confirmation() {
                                             className="h-20 w-auto flex-none rounded-md object-cover object-center"
                                         />
                                         <div className="flex-auto space-y-1 ">
-                                            <h3 className="text-white">{product.name}<span className="text-[#25589f]">  x  {product.quantity}</span></h3>
+                                            <h3 className="text-white">{product.name}<span className="text-white">  x  {product.quantity}</span></h3>
                                             <p>Talla: {product.size} MX</p>
                                         </div>
                                         <p className="flex-none text-base font-medium text-white ">{(product.price * product.quantity).toLocaleString('es-MX', {
@@ -131,7 +131,7 @@ export default function Confirmation() {
                                     Información de contacto
                                 </h3>
                                 <div className="mt-6">
-                                    <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
+                                    <label htmlFor="email-address" className="block text-sm font-medium text-gray-700 ">
                                         Correo electrónico
                                     </label>
                                     <div className="mt-1">
@@ -141,7 +141,8 @@ export default function Confirmation() {
                                             name="email"
                                             autoComplete="off"
                                             required
-                                            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-[#25589f] focus:ring-[#25589f] sm:text-sm"
+                                            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-[#25589f] focus:ring-[#25589f] sm:text-sm border rounded-s px-2 py-2 border-gray-400 border-light '
+                                            placeholder='Cantidad'"
                                         />
                                     </div>
                                 </div>
